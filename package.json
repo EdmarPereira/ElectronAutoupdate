@@ -1,6 +1,6 @@
 {
-  "name": "updater_example",
-  "version": "1.0.0",
+  "name": "electron_autoupdate",
+  "version": "1.0.1",
   "description": "Just a test for auto update",
   "main": "src/core/main.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "build": {
     "appId": "com.applyhead.edmar",
-    "productName": "updater_example",
+    "productName": "electron_autoupdate",
     "copyright": "Copyright © 2019 Edmar Pereira",
     "mac": {
       "category": "public.app-category.developer-tools",
