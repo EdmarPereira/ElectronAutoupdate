@@ -1,13 +1,12 @@
 {
   "name": "electron_autoupdate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just a test for auto update",
   "main": "src/core/main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "dist-all": "electron-builder -mw",
     "postinstall": "electron-builder install-app-deps",
     "release": "build"
   },
