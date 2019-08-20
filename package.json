@@ -7,7 +7,6 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "dist-all": "electron-builder -mw",
     "postinstall": "electron-builder install-app-deps",
     "release": "build"
   },
