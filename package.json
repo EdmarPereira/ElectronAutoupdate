@@ -1,7 +1,7 @@
 {
-  "name": "pingo",
-  "version": "1.0.7",
-  "description": "Love for NodeJS",
+  "name": "updater_example",
+  "version": "1.0.0",
+  "description": "Just a test for auto update",
   "main": "src/core/main.js",
   "scripts": {
     "start": "electron .",
@@ -14,16 +14,16 @@
     "type": "git",
     "url": "git+https://github.com/EdmarPereira/updater.git"
   },
-  "author": "Sandeep Acharya",
+  "author": "Edmar",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^3.0.9",
     "electron-builder": "^20.36.2"
   },
   "build": {
-    "appId": "com.applyhead.pingo",
-    "productName": "Pingo",
-    "copyright": "Copyright © year Sandeep Acharya",
+    "appId": "com.applyhead.edmar",
+    "productName": "updater_example",
+    "copyright": "Copyright © 2019 Edmar Pereira",
     "mac": {
       "category": "public.app-category.developer-tools",
       "type": "distribution"
@@ -34,10 +34,5 @@
   },
   "dependencies": {
     "electron-updater": "^4.0.4"
-  },
-  "bugs": {
-    "url": "https://github.com/sandeep1995/pingo/issues"
-  },
-  "homepage": "https://github.com/sandeep1995/pingo#readme",
-  "keywords": []
+  }
 }
