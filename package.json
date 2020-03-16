@@ -1,14 +1,14 @@
 {
   "name": "electron_autoupdate",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Just a test for auto update",
   "main": "src/core/main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
+    "dist": "electron-builder -m",
     "postinstall": "electron-builder install-app-deps",
-    "release": "build -p always"
+    "release": "GH_TOKEN=f217f25abc96ff9f553f361c9a7561e73651faec build -p always"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "copyright": "Copyright © 2019 Edmar Pereira",
     "mac": {
       "category": "public.app-category.developer-tools",
-      "type": "distribution"
+      "type": "distribution",
+      "target":"pkg"
     },
     "publish": [
       "github"
