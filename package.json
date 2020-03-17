@@ -1,14 +1,15 @@
 {
   "name": "electron_autoupdate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Just a test for auto update",
   "main": "src/core/main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder -m",
+    "dist-win": "electron-builder -w",
+    "dist-mac": "electron-builder -m",
     "postinstall": "electron-builder install-app-deps",
-    "release": "GH_TOKEN=f217f25abc96ff9f553f361c9a7561e73651faec build -p always"
+    "release": "build -p always"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,12 @@
     "mac": {
       "category": "public.app-category.developer-tools",
       "type": "distribution",
-      "target":"pkg"
+      "target":"pkg",
+      "icon": "assets/ico.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
     },
     "publish": [
       "github"
